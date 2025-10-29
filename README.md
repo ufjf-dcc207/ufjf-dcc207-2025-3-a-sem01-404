@@ -1,9 +1,9 @@
 # Plano de Medicação Diária Visual
 
 > Participantes:
-> Antony Kleverton - 202476002
-> Gabriel Lacerda - 202476024
-> João Gabriel - 202476008
+> - Antony Kleverton - 202476002**
+> - Gabriel Lacerda - 202476024**
+> - João Gabriel - 202476008**
 
 ## Proposta de tema
 
