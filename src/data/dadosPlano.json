@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Omeprazol",
+    "descricao": "Tomar 1 comprimido às 8h",
+    "imagem": "omeprazol.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Paracetamol",
+    "descricao": "Tomar 1 comprimido às 18h",
+    "imagem": "paracetamol.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Tylenol",
+    "descricao": "Tomar 1 comprimido às 20h",
+    "imagem": "tylenol.jpg"
+  }
+]
