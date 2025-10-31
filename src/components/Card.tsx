@@ -1,30 +1,18 @@
 import React from "react";
 
-//definicao das props que o componente vai aceitar
-interface CardProps {
-  children: React.ReactNode;
-  className?: string;
-  as?: "div" | "section" | "article"; //define a tag HTML que o componente deve usar
+//define o formato do componente card
+export type CardProps = {
+  titulo: string;
+  descricao: string;
+  imagem: string;
 }
-
-//criacao do componente em si usando FC e desestruturacao dnv
-const Card: React.FC<CardProps> = ({
-  children,
-  className = "", //valor padrao pra evitaar erro
-  as = "div", //valor padrao pra evitar erro
-}) => {
-
-  //agora transorma a string "div" / "section" / "article" em uma tag dinamica 
-  //isso permite escrever <Component> no JSX e o react entende qual tag usar
-  //ex simples: Se as="section", o JSX vira <section>...</section>.
-  const Component: React.ElementType = as;
-
-  //retorno do JSX -> tudo que colocado aqui será mostrado na tela
+//:CardProps é o tipo esperado pra cada prop dessa (titulo, imagem e descricao)
+export default function Card ({titulo, descricao, imagem}: CardProps) { 
   return (
-    <Component className={`bg-white rounded-2xl shadow-sm p-4 ${className}`}>
-      {children}
-    </Component>
-  );
-};
-
-export default Card
+    <div className="bg-white rounded-lg shadow-md p-4 max-w-sm mx-auto">
+      <img src={imagem} alt={titulo} className="w-full h-40 object-cover rounded-md mb-4" />
+      <h2 className="text-lg font-bold text-gray-800 mb-2">{titulo}</h2>
+      <p className="text-gray-600 text-sm">{descricao}</p>
+    </div>
+  )
+}
