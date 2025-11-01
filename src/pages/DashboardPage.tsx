@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import Button from "../components/button";
 import dadosPlano from "../data/dadosPlano.json"
+import Icon from "../components/Icon";
 
 export default function DashboardPage() {
   return (
